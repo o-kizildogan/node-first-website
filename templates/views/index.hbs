@@ -1,0 +1,32 @@
+<DOCTYPE html>
+
+<html>
+<head>
+	<title>NotesApp</title>
+	<link rel='icon' href='../public/img/note-icon.png'>
+	<link rel='stylesheet' href='./css/styles.css'>
+
+
+
+</head>
+<body>
+	<div class="main-content">
+		{{>header}}
+
+		<p>Insert your note</p>
+
+		<form id="form-note">
+			<input placeholder="Title" id="title" type="text" size="24"><br>
+			<br>
+			<input class="body-form" placeholder="Body" id="body" type="text" size="50" height="50px"><br>
+			<br>
+			<button>Submit</button>
+		</form>
+	</div>
+
+	{{>footer}}
+
+	<script src='./cs-js/cside.js''></script>
+
+</body>
+</html>

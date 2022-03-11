@@ -1,0 +1,33 @@
+<DOCTYPE html>
+
+<html>
+<head>
+	<title>Weather</title>
+	<link rel='stylesheet' href='./css/styles.css'>
+
+
+
+</head>
+<body>
+	<div class="main-content">
+		{{>header}}
+
+		<p>Insert the City</p>
+
+		<form id="weather-form">
+			<input class="weather-form" placeholder="City" id="city" type="text"><br>
+			<br>
+			<button class="weather-form-button">Submit</button>
+		</form>
+
+		<p id="output-message"></p>
+
+		<p id="error-message"></p>
+
+	</div>
+
+		{{>footer}}
+
+	<script src='./cs-js/weather-cside.js''></script>
+</body>
+</html>
