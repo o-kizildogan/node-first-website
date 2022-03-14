@@ -20,7 +20,7 @@ formWeather.addEventListener('submit',(e) => {
 
 	errorMessage.textContent = ''
 
-	fetch('http://localhost:3000/weather?place=' + location).then((response) => {
+	fetch(page + location).then((response) => {
 		response.json().then((data) => {
 			if (data.error){
 				errorMessage.textContent = data.error
