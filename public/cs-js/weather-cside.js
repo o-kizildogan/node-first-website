@@ -26,7 +26,7 @@ formWeather.addEventListener('submit',(e) => {
 				errorMessage.textContent = data.error
 			} else {
 				const forecastData = data.forecast
-				outputMessage.textContent = forecastData.place + "\'s coordinations are " + 'Latitude:' + forecastData.latitude + ' Longtitude:' + forecastData.longtitude
+				outputMessage.textContent = forecastData.place + "\'s coordinates are " + 'Latitude:' + forecastData.latitude + ' Longtitude:' + forecastData.longtitude
 				console.log(data)
 				errorMessage.textContent = "Temperature is "+ forecastData.temperature + " degrees celcius"
 			}
