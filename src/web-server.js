@@ -8,6 +8,10 @@ const server = express()
 
 const utils = require('./weather-utils/utils-weather.js')
 
+//port for heroku
+
+const port = process.env.PORT || 3000
+
 
 // Store the path in a variable
 
@@ -160,6 +164,12 @@ server.get('*', (req, res) => {
 
 //start the server
 
-server.listen(3000, () => {
-	console.log('Server is running on port 3000')
+//server.listen(3000, () => {
+//	console.log('Server is running on port 3000')
+//})
+
+//start the server with heroku if not on heroku locally on port 3000
+
+server.listen(port, () => {
+	console.log('Server is running on port ' + port)
 })

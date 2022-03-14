@@ -4,7 +4,7 @@ const formWeather = document.getElementById('weather-form')
 
 const locationValue = document.getElementById('city')
 
-const page = 'http://localhost:3000/weather?place='
+const page = 'http://localhost:3000/weather?place=' || '/weather?place='
 
 const outputMessage = document.getElementById('output-message')
 
