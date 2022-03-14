@@ -4,7 +4,7 @@ const formWeather = document.getElementById('weather-form')
 
 const locationValue = document.getElementById('city')
 
-//const page = 'http://localhost:3000/weather?place=' || '/weather?place='
+const page = '/weather?place='||'http://localhost:3000/weather?place='
 
 const outputMessage = document.getElementById('output-message')
 
@@ -20,7 +20,7 @@ formWeather.addEventListener('submit',(e) => {
 
 	errorMessage.textContent = ''
 
-	fetch('/weather?place=' + location).then((response) => {
+	fetch(page + location).then((response) => {
 		response.json().then((data) => {
 			if (data.error){
 				errorMessage.textContent = data.error

@@ -35,6 +35,7 @@ h1 {
 header a {
 	color: #888888;
 	margin-right: auto;
+	padding: 0px 8px 0px 0px;
 	text-decoration: none;
 	font-size: 18;
 }
@@ -48,7 +49,7 @@ header a {
 }
 
 .body-form {
-	height: 50px
+	height: 100px
 }
 
 .weather-form {
@@ -62,4 +63,8 @@ header a {
 	background: #888888;
 	color: white;
 	padding: 8px;
+}
+
+.about-paragraph {
+	font-size: 24px;
 }
